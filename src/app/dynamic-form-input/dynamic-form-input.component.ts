@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { UntypedFormGroup } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 import { FormField } from '../form-field';
 
 @Component({
@@ -10,8 +10,8 @@ import { FormField } from '../form-field';
 export class DynamicFormInputComponent {
 
   @Input() input: FormField<string>;
-  @Input() form: UntypedFormGroup;
-  
+  @Input() form: FormGroup;
+
   get isValid() { return this.form.controls[this.input.key].valid; }
 
 }

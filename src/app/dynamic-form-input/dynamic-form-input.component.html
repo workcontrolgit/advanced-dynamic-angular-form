@@ -6,7 +6,7 @@
         <label [attr.for]="input.key">{{input.label}}</label>
         <input class="form-control" [formControlName]="input.key" [id]="input.key" [type]="input.type">
       </div>
-  
+
       <div *ngSwitchCase="'dropdown'">
         <label [attr.for]="input.key">{{input.label}}</label>
         <select class="custom-select" [id]="input.key" [formControlName]="input.key">
@@ -32,7 +32,7 @@
         <label [attr.for]="input.key">{{input.label}}</label>
         <textarea class="form-control" [formControlName]="input.key" [id]="input.key" rows="5"></textarea>
       </div>
-  
+
     </div>
 
   </div>
